@@ -33,5 +33,27 @@ const EmailForm = () => {
         alert(result.status);
     };
 
-    
-} 
+    return (
+        <form onSubmit={submitHandler}>
+            <div>
+                <label htmlFor="name">Name:</label>
+                <input type="text" id="name" required />
+            </div>
+            <div>
+                <label htmlFor="email">Email:</label>
+                <input type="email" id="email" required />
+            </div>
+            <div>
+                <label htmlFor="subject">Subject:</label>
+                <input type="text" id="subject" required />
+            </div>
+            <div>
+                <label htmlFor="message">Message:</label>
+                <textarea id="message" required />
+            </div>
+            <button type="submit">{status}</button>
+        </form>
+    );
+};
+
+export default EmailForm;
