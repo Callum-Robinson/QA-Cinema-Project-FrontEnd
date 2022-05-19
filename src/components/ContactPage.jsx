@@ -1,11 +1,15 @@
 import React from "react";
 
 import EmailForm from "./EmailForm";
+import Navbar from "./navbar";
+
+
 
 const ContactPage = () => {
     return (
-        <EmailForm />
+        <><Navbar /><EmailForm /></>
     );
 }
+
 
 export default ContactPage;

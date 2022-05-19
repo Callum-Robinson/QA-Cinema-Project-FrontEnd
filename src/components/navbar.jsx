@@ -2,43 +2,15 @@ import React from "react";
 
 const Navbar = () => {
     return (
-        <>
-
-            <Nav>
-            
-                <NavMenu>
-                    <NavLink to="/about">
-                    About
-                    </NavLink>
-
-                    <NavLink to="/listings-gallery">
-                    Listings Gallery
-                    </NavLink>
-
-                    <NavLink to="/new-releases">
-                    New Releases Gallery
-                    </NavLink>
-
-                    <NavLink to="/classifications">
-                    Classifications
-                    </NavLink>
-
-                    <NavLink to="/bookings">
-                    Ticket Bookings
-                    </NavLink>
-
-                    <NavLink to="/getting-there">
-                    Getting There
-                    </NavLink>
-
-                    <NavLink to="/contact">
-                    Contact
-                    </NavLink>
-                </NavMenu>    
-
-            </Nav>
-            
-        </>
+        <div class="nav">
+            <a href="#about">About</a>
+            <a href="#listingsGallery">Listings Gallery</a>
+            <a href="#newReleases">New Releases Gallery</a>
+            <a href="#classifications">Classifications</a>
+            <a href="./ticketBooking.html">Ticket Bookings</a>
+            <a href="#GettingThere">Getting There</a>
+            <a href="#Contact">Contact</a>
+        </div>
     );
 
 };
