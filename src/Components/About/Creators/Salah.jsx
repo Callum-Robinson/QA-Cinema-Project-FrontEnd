@@ -8,7 +8,6 @@ return (
     <p>
         Hi my name is Salah, and I am one of the creators of QA Cinemas!
     </p>
-    <img src="/res/Salah.jpg"/>
     </>
 )
 

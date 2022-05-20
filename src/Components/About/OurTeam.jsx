@@ -1,5 +1,7 @@
 import Salah from "./Creators/Salah"; 
-
+import Allister from "./Creators/Allister";
+import Mohab from "./Creators/Mohab";
+import Callum from "./Creators/Callum";
 const OurTeam = () => {
 
     return (
@@ -9,6 +11,9 @@ const OurTeam = () => {
         <br></br>
 
         <Salah />
+        <Allister />
+        <Mohab />
+        <Callum />
         <hr />
         </>
     )
