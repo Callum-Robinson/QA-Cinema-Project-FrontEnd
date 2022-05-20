@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
     return (
-        <div id="nav">
+        <nav>
             <a href="#about">About</a>
             <a href="#listingsGallery">Listings Gallery</a>
             <a href="#newReleases">New Releases Gallery</a>
@@ -10,7 +10,7 @@ const Navbar = () => {
             <a href="./ticketBooking.html">Ticket Bookings</a>
             <a href="#GettingThere">Getting There</a>
             <a href="#Contact">Contact</a>
-        </div>
+        </nav>
     );
 
 };
