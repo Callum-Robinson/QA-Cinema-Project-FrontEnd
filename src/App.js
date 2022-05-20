@@ -10,6 +10,10 @@ function App() {
 
   return (
     <div className='App'>
+      <header>
+        <h1>QA CINEMAS</h1>
+      </header>
+
       <nav id="navbar">
           <Link id="toggle" to="#" onClick={toggleMenu}>Menu</Link>
           <Link className="nav-link" to="/">Home</Link>
