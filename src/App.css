@@ -84,9 +84,7 @@ nav a:hover {
   width: 6%;
 }
 
-#footer {
-  position:absolute;
-  bottom:0;
+footer {
   width: 90%; 
   overflow: hidden;
   background-color: #F28A0F;
@@ -102,7 +100,7 @@ nav a:hover {
 
 }
 
-#footer a {
+footer a {
   float: centre;
   color: #FFE7BD;
   text-align: center;
@@ -111,7 +109,7 @@ nav a:hover {
   font-size: 17px;
 }
 
-#footer a:hover {
+footer a:hover {
   border-radius: 6px;
   background-color: #FFE7BD;
   color: #0B0835;
