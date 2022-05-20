@@ -25,6 +25,11 @@ body {
   color:white;
 }
 
+/* makes sure the body fills the screen */
+html, body { 
+  min-height: 100%; 
+}
+
 /* put content in a content tag */
 .content {
   width: 90%;   
@@ -80,6 +85,8 @@ nav a:hover {
 }
 
 #footer {
+  position:absolute;
+  bottom:0;
   width: 90%; 
   overflow: hidden;
   background-color: #F28A0F;

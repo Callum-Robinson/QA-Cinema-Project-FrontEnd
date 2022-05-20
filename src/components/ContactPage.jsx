@@ -2,7 +2,7 @@ import React from "react";
 
 import EmailForm from "./EmailForm";
 import Navbar from "./navbar";
-import Footer from "./footer";
+import Footer from "./Footer";
 import Header from "./Header";
 
 
