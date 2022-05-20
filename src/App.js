@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <ContactPage />
     </div>
-  );
+  )
 }
 
 export default App;
