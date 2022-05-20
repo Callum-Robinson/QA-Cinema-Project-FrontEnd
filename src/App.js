@@ -27,6 +27,14 @@ function App() {
       </nav>
 
       <Outlet/>
+
+      <footer>
+          <Link className="footer-link" to="/">Home</Link>
+          <Link className="footer-link" to="/about">About</Link>
+          <Link className="footer-link" to="/contactus">Contact Us</Link>
+            
+          <img id="logo" src="/images/qa_fill_primary.svg" alt="placeholder logo" />
+      </footer>
     </div>
   );
 }
