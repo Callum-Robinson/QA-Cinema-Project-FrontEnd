@@ -49,4 +49,7 @@ body {
   color: #0B0835;
 }
 
-
+#logo {
+  float:right;
+  width: 6%;
+}
