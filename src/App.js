@@ -1,11 +1,10 @@
-import AboutPage  from "./Components/About/AboutPage";
+import './App.css';
+import ContactPage from './components/ContactPage';
 
 function App() {
   return (
-    <div className="page-container">
-    
-            <AboutPage />
-          
+    <div className="App">
+      <ContactPage />
     </div>
   )
 }
