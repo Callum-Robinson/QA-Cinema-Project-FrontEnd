@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+header {
+    
+  width: 90%;
+  font-family: 'Abril Fatface';
+  background-color: #3F8A8C;
+  background-image: linear-gradient(white, #3F8A8C);
+  border-radius: 16px;
+  color: #0B0835;
+  padding: 16px;
+  margin-top: 0;
+  margin-left: 5%;
+  box-shadow: 0px 15px 10px darkslategrey
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.nav {
+  width: 90%;  
+  overflow: hidden;
+  background-color: #3F8A8C;
+  border-radius: 16px;
+  padding: 16px;
+  margin:16px;
+  margin-left: 5%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 15px 10px darkslategrey
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav a {
+  float: centre;
   color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav a:hover {
+  border-radius: 6px;
+  background-color: #ADEFD1FF;
+  color: #0B0835;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
