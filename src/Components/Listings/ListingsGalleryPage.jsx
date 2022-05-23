@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
 
 
-function ListingsGalleryPage(props) {
+const ListingsGalleryPage = () => {
 
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
