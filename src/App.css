@@ -52,6 +52,7 @@ main {
 
 nav {
   width: 90%;  
+  display:flex;
   overflow: hidden;
   background-color: #3F8A8C;
   border-radius: 16px;
@@ -59,25 +60,31 @@ nav {
   margin:16px;
   margin-left: 5%;
   position: -webkit-sticky; /* Safari */
-  position: sticky;
+   position: sticky;
   top: 0;
   box-shadow: 0px 15px 10px darkslategrey
 }
 
-nav a {
+.nav-link, #toggle {
   float: centre;
   color: white;
   text-align: center;
   padding: 16px;
   text-decoration: none;
   font-size: 17px;
+  display: inherit;
 }
 
-nav a:hover {
+.nav-link:hover, #toggle:hover {
   border-radius: 6px;
   background-color: #ADEFD1FF;
   color: #0B0835;
 }
+
+#toggle {
+  display: none;
+}
+
 
 #logo {
   float:right;
@@ -113,4 +120,58 @@ footer a:hover {
   border-radius: 6px;
   background-color: #FFE7BD;
   color: #0B0835;
+}
+
+.hide {
+  display: none;
+}
+/* A media query can be used to change CSS values dependent on various factors, usually a max-width or min-width of the
+  viewport (screen).
+  Media queries always start with `@media target and (properties) {
+  }`
+  - the properties are what we are checking for
+*/
+@media screen and (max-width: 1024px) {
+  aside {
+      flex: 25%;
+  }
+
+  main {
+      flex: 75%
+  }
+}
+
+@media screen and (max-width: 768px) {
+  aside {
+      display: none;
+  }
+
+  header {
+    display: none;
+  }
+  main {}
+
+  nav, .container, .row {
+      flex-direction: column;
+  }
+
+  
+
+  nav {
+      margin-bottom: 10;
+      position: absolute;
+  }
+
+  .nav-link {
+      display: none;
+  }
+
+  #toggle {
+      display: block;
+      cursor: pointer;
+  }
+}
+
+.show {
+  display: inherit;
 }
