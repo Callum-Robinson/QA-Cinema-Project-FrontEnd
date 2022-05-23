@@ -9,6 +9,7 @@ import AboutPage from './Components/About/AboutPage';
 import Error from './Components/Error/Error';
 import ClassificationsPage from './Components/Classifications/ClassificationsPage';
 import ListingsGalleryPage from './Components/Listings/ListingsGalleryPage';
+import MovieDetails from './Components/MovieDetails/MovieDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
