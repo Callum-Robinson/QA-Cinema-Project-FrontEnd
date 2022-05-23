@@ -11,6 +11,7 @@ import ClassificationsPage from './Components/Classifications/ClassificationsPag
 import ListingsGalleryPage from './Components/Listings/ListingsGalleryPage';
 import MovieDetails from './Components/MovieDetails/MovieDetails';
 import GettingTherePage from './Components/GettingThere/GettingTherePage';
+import TicketBookingPage from './Components/TicketBooking/TicketBookingPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
