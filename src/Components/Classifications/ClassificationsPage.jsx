@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-export default function Classifications() {
+const ClassificationsPage = () => {
     return (
         <main>
             <h2>Classifications</h2>
@@ -11,4 +11,6 @@ export default function Classifications() {
         </main>
 
             )
-}
+};
+
+export default ClassificationsPage;
