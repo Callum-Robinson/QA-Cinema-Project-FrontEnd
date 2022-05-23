@@ -12,7 +12,7 @@ const ListingsGalleryPage = () => {
         return (
             <div key={movie.title}>
                 <Link to={`/listingsgallery/${movie.id}`}>
-                    <img id="movie-poster" src={movie.image} alt="movie poster" />
+                    <img id="movie-poster" src={movie.poster} alt="movie poster" />
                 </Link>
                 <h3 id="movie-listing-title">{movie.title}</h3>
             </div>
