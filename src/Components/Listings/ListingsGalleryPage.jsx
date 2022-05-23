@@ -33,17 +33,17 @@ function ListingsGalleryPage(props) {
             .finally(() => setLoading(false))
     }, []);
 
+    if (loading) return <h1>Loading movies...</h1>
+    else if (error) return <h1>Error loading movies...</h1>
 
-
-
-    return (
+    else return (
         <main>
             <h2>Listings Gallery</h2>
-
-            
+            {data.map(movie => mapMovieImages(movie))}
+            <Outlet />            
         </main>
 
-            )
+            );
 };
 
 export default ListingsGalleryPage;
