@@ -8,6 +8,7 @@ import HomePage from './Components/Home/HomePage';
 import AboutPage from './Components/About/AboutPage';
 import Error from './Components/Error/Error';
 import ClassificationsPage from './Components/Classifications/ClassificationsPage';
+import ListingsGalleryPage from './Components/Listings/ListingsGalleryPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
