@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ContactPage from './Components/Contact/ContactPage';
 import HomePage from './Components/Home/HomePage';
 import AboutPage from './Components/About/AboutPage';
+import Error from './Components/Error/Error';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
