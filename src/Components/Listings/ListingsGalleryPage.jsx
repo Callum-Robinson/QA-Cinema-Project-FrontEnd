@@ -35,7 +35,6 @@ const ListingsGalleryPage = () => {
 
     if (loading) return <main><h1>Loading movies...</h1></main>
     else if (error) return <main><h1>Error loading movies...</h1></main>
-
     else return (
         <main>
             <h2>Listings Gallery</h2>

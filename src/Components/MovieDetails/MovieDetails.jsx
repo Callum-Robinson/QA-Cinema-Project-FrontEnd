@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 
@@ -24,14 +24,27 @@ const MovieDetails = () => {
         )
     }
 
-    return (
+    useEffect(() => {
+        fetch(`http://localhost:5000/movie/${params.movieId}`)
+            .then(response => {
+                if (response.ok) return response.json();
+                throw response;
+            })
+            .then(data => setData(data))
+            .catch(error => {
+                console.error(error);
+                setError(error)
+            })
+            .finally(() => setLoading(false))
+    }, []);
+
+    if (loading) return <main><h1>Loading movie details...</h1></main>
+    else if (error) return <main><h1>Error loading movie details...</h1></main>
+    else return (
         <main>
-            <h2>Movie Details</h2>
-
-            
+            {data.map(movie => mapMovieDetails(movie))}
         </main>
-
-            )
+            );
 };
 
 export default MovieDetails;
