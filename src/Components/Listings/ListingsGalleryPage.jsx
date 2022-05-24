@@ -9,10 +9,13 @@ const ListingsGalleryPage = () => {
     const [loading, setLoading] = useState(true);
 
     const mapMovieImages = (movie) => {
+
+        const base64Poster = `data:${movie.poster.contentType};base64, ${movie.poster.data}`;
+        console.log(base64Poster);
         return (
             <div key={movie.title}>
-                <Link to={`/listingsgallery/${movie.id}`}>
-                    <img id="movie-poster" src={movie.poster} alt="movie poster" />
+                <Link to={`/listingsgallery/${movie._id}`}>
+                    <img id="movie-poster" src={base64Poster} alt="movie poster" />
                 </Link>
                 <h3 id="movie-listing-title">{movie.title}</h3>
             </div>
