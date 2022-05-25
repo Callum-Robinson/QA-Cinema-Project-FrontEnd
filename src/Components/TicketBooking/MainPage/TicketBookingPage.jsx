@@ -1,32 +1,17 @@
-import React from "react"
-import { Alert } from 'reactstrap'
+import React from "react";
+
 
 
 const TicketBookingPage = () => {
-
-    const [basketInfo, setbasketinfo] = useState({});
-    const [ticketAlert, setticketAlert] = useState(false);
-
+    
     return (
-        <>
-            <hr />
-            <div className="row">
-                <div className="col-9">
-                    <br />
-                    <h2 style={{ color: "gold", marginLeft: "25px" }}><center>Ticket Booking:</center></h2>
-                    <Alert isOpen={ticketAlert} style={{ marginLeft: "25px", textAlign: "center" }} color="danger">Please select a movie and seats before purchasing!</Alert>
-                    <br />
-                    <br />
-                    <div className="">
-                        <ReadAll basketinfo={setbasketinfo} />
-                    </div>
-                </div>
-                <div className="col-3" style={{ backgroundColor: "black" }}>
-                    <Sidebar ticketalert={setticketAlert} basketinfo={basketInfo} style={{ backgroundColor: "black" }} />
-                </div>
-            </div>
-        </>
-    )
+        <main>
+            <h2>Ticket Booking</h2>
+
+            
+        </main>
+
+            )
 };
 
 export default TicketBookingPage;
