@@ -119,6 +119,30 @@ nav {
   
 }
 
+#cinema {
+  width: 45%;
+  float: left;
+  margin-right: 5%;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.right-text {
+  text-align: right;
+}
+
+#map {
+  width: 45%;
+  float: right;
+}
+
+#directions {
+  width: 45%;
+  float: left;
+}
+
 
 #banner {
   width: 70%;
