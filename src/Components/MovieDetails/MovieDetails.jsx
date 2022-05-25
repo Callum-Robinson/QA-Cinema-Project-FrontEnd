@@ -10,10 +10,11 @@ const MovieDetails = () => {
     const [loading, setLoading] = useState(true);
 
     const mapMovieDetails = (movie) => {
+        const base64Poster = `data:${movie.poster.contentType};base64, ${movie.poster.data}`;
         return (
             <div key={movie.title}>
                 <h2>{movie.title}</h2>
-                <img id="movie-poster" src={movie.poster} alt="movie poster" />
+                <img id="movie-poster" src={base64Poster} alt="movie poster" width="250"/>
                 <p><strong>Genre:</strong> {movie.genre}</p>
                 <p><strong>Description:</strong> {movie.description}</p>
                 <p><strong>Actors:</strong> {movie.actors}</p>
@@ -30,19 +31,22 @@ const MovieDetails = () => {
                 if (response.ok) return response.json();
                 throw response;
             })
-            .then(data => setData(data))
+            .then(data => {
+                setData(data);
+                console.log(data);
+            })
             .catch(error => {
                 console.error(error);
                 setError(error)
             })
             .finally(() => setLoading(false))
-    }, []);
+    }, [params.movieId]);
 
     if (loading) return <main><h1>Loading movie details...</h1></main>
     else if (error) return <main><h1>Error loading movie details...</h1></main>
     else return (
         <main>
-            {data.map(movie => mapMovieDetails(movie))}
+            {mapMovieDetails(data)}
         </main>
             );
 };
