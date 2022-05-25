@@ -36,7 +36,7 @@ const MovieDetails = () => {
                 setError(error)
             })
             .finally(() => setLoading(false))
-    }, []);
+    }, [params.movieId]);
 
     if (loading) return <main><h1>Loading movie details...</h1></main>
     else if (error) return <main><h1>Error loading movie details...</h1></main>
