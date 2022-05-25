@@ -3,17 +3,17 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ContactPage from './Components/Contact/ContactPage';
-import HomePage from './Components/Home/HomePage';
-import AboutPage from './Components/About/AboutPage';
-import Error from './Components/Error/Error';
-import ClassificationsPage from './Components/Classifications/ClassificationsPage';
-import ListingsGalleryPage from './Components/Listings/ListingsGalleryPage';
-import MovieDetails from './Components/MovieDetails/MovieDetails';
-import GettingTherePage from './Components/GettingThere/GettingTherePage';
-import TicketBookingPage from './Components/TicketBooking/TicketBookingPage';
-import NewReleaseDetails from './Components/NewRelease/NewReleaseDetails';
-import NewReleasePage from './Components/NewRelease/NewReleasePage';
+import ContactPage from './components/Contact/ContactPage';
+import HomePage from './components/Home/HomePage';
+import AboutPage from './components/About/AboutPage';
+import Error from './components/Error/Error';
+import ClassificationsPage from './components/Classifications/ClassificationsPage';
+import ListingsGalleryPage from './components/Listings/ListingsGalleryPage';
+import MovieDetails from './components/MovieDetails/MovieDetails';
+import GettingTherePage from './components/GettingThere/GettingTherePage';
+import TicketBookingPage from './components/TicketBooking/TicketBookingPage';
+import NewReleaseDetails from './components/NewRelease/NewReleaseDetails';
+import NewReleasePage from './components/NewRelease/NewReleasePage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
