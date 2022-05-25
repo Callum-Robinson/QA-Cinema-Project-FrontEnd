@@ -1,16 +1,54 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 
 const MovieDetails = () => {
-    return (
+    const params = useParams();
+
+    const [data, setData] = useState(null);
+    const [error, setError] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    const mapMovieDetails = (movie) => {
+        const base64Poster = `data:${movie.poster.contentType};base64, ${movie.poster.data}`;
+        return (
+            <div key={movie.title}>
+                <h2>{movie.title}</h2>
+                <img id="movie-poster" src={base64Poster} alt="movie poster" width="250"/>
+                <p><strong>Genre:</strong> {movie.genre}</p>
+                <p><strong>Description:</strong> {movie.description}</p>
+                <p><strong>Actors:</strong> {movie.actors}</p>
+                <p><strong>Directors:</strong> {movie.directors}</p>
+                <p><strong>Release year:</strong> {movie.releaseYear}</p>
+                <p><strong>Runtime:</strong> {movie.runtime}</p>
+            </div>
+        )
+    }
+
+    useEffect(() => {
+        fetch(`http://localhost:5000/movie/${params.movieId}`)
+            .then(response => {
+                if (response.ok) return response.json();
+                throw response;
+            })
+            .then(data => {
+                setData(data);
+                console.log(data);
+            })
+            .catch(error => {
+                console.error(error);
+                setError(error)
+            })
+            .finally(() => setLoading(false))
+    }, [params.movieId]);
+
+    if (loading) return <main><h1>Loading movie details...</h1></main>
+    else if (error) return <main><h1>Error loading movie details...</h1></main>
+    else return (
         <main>
-            <h2>Movie Details</h2>
-
-            
+            {mapMovieDetails(data)}
         </main>
-
-            )
+            );
 };
 
 export default MovieDetails;
