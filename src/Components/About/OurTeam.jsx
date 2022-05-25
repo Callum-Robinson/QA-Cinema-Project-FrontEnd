@@ -5,7 +5,7 @@ import Callum from "./Creators/Callum";
 const OurTeam = () => {
   return (
     <>
-      <main>
+      
         <h1> Our Team </h1>
         <hr />
         <br></br>
@@ -14,8 +14,8 @@ const OurTeam = () => {
         <Allister />
         <Mohab />
         <Callum />
-        <hr />
-      </main>
+       
+      
     </>
   );
 };

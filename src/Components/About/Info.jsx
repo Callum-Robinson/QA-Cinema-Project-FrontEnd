@@ -4,6 +4,7 @@ const Info = () => {
       <div className="row">
         <div className="col-md-9">
           <h1> About Us </h1>
+          <hr />
           <p>
             Here at QA Cinemas, our goal was to create a functional web
             application where you can book your favourite new film releases to
