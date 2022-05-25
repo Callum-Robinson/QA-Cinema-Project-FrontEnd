@@ -102,9 +102,21 @@ nav {
   background: #ccc;
 }
 
+main img {
+  margin: 16px;
+  border-radius: 6px;
+  box-shadow: 0px 15px 10px darkslategrey;
+}
+
 #toggle {
   display: none;
 }
+
+#home-content img {
+  float: right;
+  
+}
+
 
 #banner {
   width: 70%;
