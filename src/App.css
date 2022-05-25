@@ -30,10 +30,17 @@ main {
   width: 90%;   
   background-color: #3F8A8C;
   border-radius: 16px;
-  padding: 16px;
+  padding: 32px;
   margin:16px;
   margin-left: 5%;
+  margin-right: 5%;
   box-shadow: 0px 15px 10px #0e1111
+}
+
+main img {
+  margin: 16px;
+  border-radius: 6px;
+  box-shadow: 0px 15px 10px darkslategrey;
 }
 
 /* this fixes a problem when using "float" that causes layouts to do weird things. If you're interested, css-tricks.com have a great article about it. */
@@ -102,11 +109,6 @@ nav {
   background: #ccc;
 }
 
-main img {
-  margin: 16px;
-  border-radius: 6px;
-  box-shadow: 0px 15px 10px darkslategrey;
-}
 
 #toggle {
   display: none;
