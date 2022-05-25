@@ -4,8 +4,10 @@ import EmailForm from "./EmailForm";
 
 const ContactPage = () => {
     return (
-        <>
+        <>  
+            <main>
             <EmailForm />
+            </main>
         </>
     );
 }
