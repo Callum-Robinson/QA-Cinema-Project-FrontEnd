@@ -25,14 +25,30 @@ const NewReleaseDetails = () => {
         )
     }
 
-    return (
+    useEffect(() => {
+        fetch(`http://localhost:5000/newrelease/${params.releaseId}`)
+            .then(response => {
+                if (response.ok) return response.json();
+                throw response;
+            })
+            .then(data => {
+                setData(data);
+                console.log(data);
+            })
+            .catch(error => {
+                console.error(error);
+                setError(error)
+            })
+            .finally(() => setLoading(false))
+    }, [params.releaseId]);
+
+    if (loading) return <main><h1>Loading new release details...</h1></main>
+    else if (error) return <main><h1>Error loading release details...</h1></main>
+    else return (
         <main>
-            <h2>New Release Details</h2>
-
-            
+            {mapNewReleaseDetails(data)}
         </main>
-
-            )
+            );
 };
 
 export default NewReleaseDetails;
