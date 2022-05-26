@@ -20,7 +20,7 @@ const MovieDetails = () => {
                 <p><strong>Actors:</strong> {movie.actors}</p>
                 <p><strong>Directors:</strong> {movie.directors}</p>
                 <p><strong>Release year:</strong> {movie.releaseYear}</p>
-                <p><strong>Runtime:</strong> {movie.runtime}</p>
+                <p><strong>Runtime(minutes):</strong> {movie.runtime}</p>
             </div>
         )
     }
