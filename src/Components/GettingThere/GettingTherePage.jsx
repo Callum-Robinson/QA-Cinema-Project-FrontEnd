@@ -22,10 +22,11 @@ const GettingTherePage = () => {
                         Scotland<br />
                         G2 5AH<br />
                         <br />
-                </div>
-
+                
+                        </div>
 
                 <div class="clearfix">
+                <div class="centered-text">
                     <h3>How to get here</h3><br />
                     <img id="directions" src="/images/directions.gif" alt="QA Cinemas" />
                     
@@ -36,10 +37,11 @@ const GettingTherePage = () => {
                         Click <a href="#">here</a> for directions from BUCHANAN ST BUS STATION<br /><br />
                     </p>
                     </div>
-                </div>
+                    </div>
+                
             
 
-
+                </div>
         </main>
 
     )

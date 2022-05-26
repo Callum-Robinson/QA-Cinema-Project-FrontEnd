@@ -15,6 +15,7 @@ import TicketBookingPage from './Components/TicketBooking/TicketBookingPage';
 import NewReleaseDetails from './Components/NewRelease/NewReleaseDetails';
 import NewReleasePage from './Components/NewRelease/NewReleasePage';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
