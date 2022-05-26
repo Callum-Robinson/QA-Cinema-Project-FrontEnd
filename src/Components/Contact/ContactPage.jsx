@@ -18,6 +18,8 @@ const ContactPage = () => {
                     <tr><th>Tuesday</th><td>9am - 5pm</td></tr>
                     <tr><th>Wednesday</th><td>9am - 5pm</td></tr>
                     <tr><th>Thursday</th><td>9am - 5pm</td></tr>
+                    <tr><th>Friday</th><td>9am - Midnight</td></tr>
+                    <tr><th>Saturday</th><td>9am - Midnight</td></tr>
                     </table>
                     <br/>
                     <h3>Address:</h3>
