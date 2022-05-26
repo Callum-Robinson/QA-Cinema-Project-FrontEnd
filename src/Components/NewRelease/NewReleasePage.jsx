@@ -34,13 +34,16 @@ const NewReleasePage = () => {
             .finally(() => setLoading(false))
     }, []);
 
-    return (
+    if (loading) return <main><h1>Loading new releases...</h1></main>
+    else if (error) return <main><h1>Error loading movies...</h1></main>
+    else return (
         <main>
             <h2>New Releases</h2>
-            
+            {data.map(release => mapNewReleaseImages(release))}
+            <Outlet />
         </main>
 
-            )
+            );
 };
 
 export default NewReleasePage;
