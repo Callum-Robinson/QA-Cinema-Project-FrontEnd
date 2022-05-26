@@ -9,7 +9,7 @@ import AboutPage from './Components/About/AboutPage';
 import Error from './Components/Error/Error';
 import ClassificationsPage from './Components/Classifications/ClassificationsPage';
 import ListingsGalleryPage from './Components/Listings/ListingsGalleryPage';
-import MovieDetails from './Components/MovieDetails/MovieDetails';
+import MovieDetails from './Components/Listings/MovieDetails';
 import GettingTherePage from './Components/GettingThere/GettingTherePage';
 import TicketBookingPage from './Components/TicketBooking/TicketBookingPage';
 import NewReleaseDetails from './Components/NewRelease/NewReleaseDetails';
