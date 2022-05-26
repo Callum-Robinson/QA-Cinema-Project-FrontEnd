@@ -20,6 +20,20 @@ const NewReleasePage = () => {
         )
     }
 
+    useEffect(() => {
+        fetch(`http://localhost:5000/newrelease`)
+            .then(response => {
+                if (response.ok) return response.json();
+                throw response;
+            })
+            .then(data => setData(data))
+            .catch(error => {
+                console.error(error);
+                setError(error)
+            })
+            .finally(() => setLoading(false))
+    }, []);
+
     return (
         <main>
             <h2>New Releases</h2>
