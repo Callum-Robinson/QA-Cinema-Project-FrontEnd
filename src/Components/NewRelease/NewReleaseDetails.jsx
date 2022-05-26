@@ -16,6 +16,7 @@ const NewReleaseDetails = () => {
                 <h2>{release.title}</h2>
                 <img id="new-release-poster" src={base64Poster} alt="new release poster" width="250"/>
                 <p><strong>Genre:</strong> {release.genre}</p>
+                <p><strong>Classification:</strong> {release.classification}</p>
                 <p><strong>Description:</strong> {release.description}</p>
                 <p><strong>Actors:</strong> {release.actors}</p>
                 <p><strong>Directors:</strong> {release.directors}</p>
