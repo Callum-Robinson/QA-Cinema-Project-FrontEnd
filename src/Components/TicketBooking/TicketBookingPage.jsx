@@ -9,16 +9,20 @@ import Time from "./Time";
 const TicketBookingPage = () => {
   return (
     <main>
-      <h1>Booking Your Movie</h1>
-      <form id="ticket-booking">
-        <TicketBooker />
-        <br></br>
-        <FilmSelection />
-        <Date />
-        <Time />
-        <Tickets />
-        <Checkout />
-      </form>
+      <div className="clear-fix">
+        <div className="centered-text">
+          <h1>Booking Your Movie</h1>
+          <form id="ticket-booking">
+            <TicketBooker />
+            <br></br>
+            <FilmSelection />
+            <Date />
+            <Time />
+            <Tickets />
+            <Checkout />
+          </form>
+        </div>
+      </div>
     </main>
   );
 };
