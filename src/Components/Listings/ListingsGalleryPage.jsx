@@ -40,7 +40,9 @@ const ListingsGalleryPage = () => {
     else return (
         <main>
             <h2>Listings Gallery</h2>
+            <div class="listings-gallery">
             {data.map(movie => mapMovieImages(movie))}
+            </div>
             <Outlet />            
         </main>
 

@@ -39,7 +39,9 @@ const NewReleasePage = () => {
     else return (
         <main>
             <h2>New Releases</h2>
-            {data.map(release => mapNewReleaseImages(release))}
+            <div class="listings-gallery">
+                {data.map(release => mapNewReleaseImages(release))}
+            </div>
             <Outlet />
         </main>
 

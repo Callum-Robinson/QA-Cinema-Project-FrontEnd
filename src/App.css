@@ -199,6 +199,15 @@ footer a:hover {
 .hide {
   display: none;
 }
+
+div.listings-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
 /* A media query can be used to change CSS values dependent on various factors, usually a max-width or min-width of the
   viewport (screen).
   Media queries always start with `@media target and (properties) {
