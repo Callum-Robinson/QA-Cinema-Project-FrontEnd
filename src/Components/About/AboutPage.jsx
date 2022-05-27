@@ -6,11 +6,18 @@ const AboutPage = () => {
   return (
     <main>
       <div class="centered-text">
-        <Info />
-        <br></br>
-        <OurTeam />
-        <br></br>
-      <SocialLinks />
+        <div className="clear-fix">
+          <div className="centered-text">
+
+            <Info />
+            <br></br>
+            <OurTeam />
+            <br></br>
+            <SocialLinks />
+
+            <SocialLinks />
+          </div>
+        </div>
       </div>
     </main>
   );

@@ -1,0 +1,59 @@
+const Time = () => {
+  return (
+    <div>
+      <h3>Screen Times</h3>
+      <label>
+        <input
+          name="user-recommend"
+          value="one-oclock"
+          type="radio"
+          class="input-radio"
+          checked
+        />
+        13:00
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="two-oclock"
+          type="radio"
+          class="input-radio"
+          checked
+        />
+        14:00
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="three-oclock"
+          type="radio"
+          class="input-radio"
+          checked
+        />
+        15:00
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="four-oclock"
+          type="radio"
+          class="input-radio"
+          checked
+        />
+        16:00
+      </label>
+      <label>
+        <input
+          name="user-recommend"
+          value="five-oclock"
+          type="radio"
+          class="input-radio"
+          checked
+        />
+        17:00
+      </label>
+    </div>
+  );
+};
+
+export default Time;
