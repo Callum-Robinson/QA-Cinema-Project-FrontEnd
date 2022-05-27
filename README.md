@@ -64,7 +64,7 @@ For this project you will need:
 
  The BackEnd project set up and running (https://github.com/Mohab-Khalifa/QA-Cinema-Project-BackEnd/blob/main/README.md)
  
- Then once you have that set up similarly set up the FrontEnd:
+ Then once you have that set up, similarly set up the FrontEnd:
 
 Download from this repository:
 ```bash
