@@ -275,8 +275,12 @@ div.listings-gallery {
   }
 
   #directions {
-    
     width: 90%;
+  }
+
+  #cinema2 {
+    width: 90%;
+    float: none;
   }
 }
 
