@@ -1,3 +1,16 @@
+# QA Cinema Project
+
+This is the final project of the 22FebEnable3 cohort (Team Air) and the goal was to create a
+full stack web application for a client called QA Cinemas
+
+This is the back-end of the application and is a fully functional fetch API that has the necessary
+routes to process the fetch requests from the front-end and interacting with a MongoDB database or sends
+emails (for the contact form).
+
+The back-end can be found here: https://github.com/Mohab-Khalifa/QA-Cinema-Project-BackEnd
+
+The Jira planning board for this project can be found here: https://mohabk.atlassian.net/jira/software/projects/FPC/boards/7/roadmap
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -43,28 +56,53 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Installation
 
-### Analyzing the Bundle Size
+For this project you will need:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ The BackEnd project set up and running (https://github.com/Mohab-Khalifa/QA-Cinema-Project-BackEnd/blob/main/README.md)
+ 
+ Then once you have that set up similarly set up the FrontEnd:
 
-### Making a Progressive Web App
+Download from this repository:
+```bash
+  git clone https://github.com/Mohab-Khalifa/QA-Cinema-Project-FrontEnd
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+Install the needed node packages using node package manager
+```bash
+  npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Running the API
 
-### `npm run build` fails to minify
+Simply use the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+  npm start
+```
+
+The console should look something like this:
+
+![React](https://user-images.githubusercontent.com/100781000/170706334-4af34b7c-b7b5-4ccf-989a-55c1b56991c7.png)
+
+
+## Authors!
+
+
+- [@Callum-Robinson](https://github.com/Callum-Robinson)
+- [@Allister-Gardner](https://github.com/awggardner)
+- [@Mohab-Khalifa](https://github.com/Mohab-Khalifa)
+- [@Salah-Salah](https://github.com/SalahS49)
+
+
+## Acknowledgements
+
+ - Morgan Walsh for the support throughout the project
+ - [GeeksforGeeks](https://www.geeksforgeeks.org/) for some helpful tutorials
+ - [W3](https://www.w3schools.com/) for being an amazing resource
