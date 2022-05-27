@@ -9,6 +9,23 @@ const MovieDetails = () => {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
 
+    const mapTimes = (item) => {
+        return (
+            <li>{item}</li>
+        )
+    }
+
+    const mapScreenings = (timing) => {
+        return (
+            <li key={timing.screeningDay}>
+                <p><strong>{timing.screeningDay}</strong></p>
+                <ul>
+                    {timing.screeningTimes.map(item => mapTimes(item))}
+                </ul>
+            </li>
+        )
+    }
+
     const mapMovieDetails = (movie) => {
         const base64Poster = `data:${movie.poster.contentType};base64, ${movie.poster.data}`;
         return (
@@ -16,11 +33,16 @@ const MovieDetails = () => {
                 <h2>{movie.title}</h2>
                 <img id="movie-poster" src={base64Poster} alt="movie poster" width="250"/>
                 <p><strong>Genre:</strong> {movie.genre}</p>
+                <p><strong>Classification:</strong> {movie.classification}</p>
                 <p><strong>Description:</strong> {movie.description}</p>
                 <p><strong>Actors:</strong> {movie.actors}</p>
                 <p><strong>Directors:</strong> {movie.directors}</p>
                 <p><strong>Release year:</strong> {movie.releaseYear}</p>
-                <p><strong>Runtime:</strong> {movie.runtime}</p>
+                <p><strong>Runtime(minutes):</strong> {movie.runtime}</p>
+                <p><strong>Viewing times:</strong></p>
+                <ul>
+                    {movie.timings.map(timing => mapScreenings(timing))}
+                </ul>
             </div>
         )
     }

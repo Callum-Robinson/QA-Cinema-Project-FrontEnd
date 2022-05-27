@@ -1,15 +1,20 @@
 import Info from "./Info";
 import OurTeam from "./OurTeam";
-
+import SocialLinks from "./SocialLinks";
 
 const AboutPage = () => {
-  return <div className="page-container">
-
-<Info />
-<OurTeam />
-
-
-  </div>;
+  return (
+    <main>
+      <div className="clear-fix">
+        <div className="centered-text">
+      
+        <Info />
+        <br></br></div>
+        <OurTeam />
+        <br></br>
+      <SocialLinks /></div>
+    </main>
+  );
 };
 
 export default AboutPage;

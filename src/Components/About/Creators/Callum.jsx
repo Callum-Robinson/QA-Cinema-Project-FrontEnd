@@ -21,9 +21,7 @@ const Callum = () => {
             <FaLinkedin />
           </a>
         </div>
-        <div className="col-md-3">
-          <br />
-        </div>
+
         <hr />
       </div>
     </>
