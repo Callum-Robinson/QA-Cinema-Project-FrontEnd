@@ -273,6 +273,11 @@ div.listings-gallery {
       display: block;
       cursor: pointer;
   }
+
+  #directions {
+    
+    width: 90%;
+  }
 }
 
 .show {
