@@ -7,8 +7,7 @@ const ContactPage = () => {
         <>
             <main>
                 <div class="clearfix">
-
-                    
+                <div class="centered-text">
                     <img id="cinema2" src="/images/cinema.png" alt="a photograph of our Glasgow cinema from the street" />
                     <br /><br />
                     <h3>Opening Hours</h3>
@@ -34,6 +33,7 @@ const ContactPage = () => {
                     <h3>Send us an email:</h3>
 
                     <EmailForm />
+                    </div>
                 </div>
             </main>
         </>

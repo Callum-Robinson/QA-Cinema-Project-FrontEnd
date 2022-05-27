@@ -27,7 +27,8 @@ const GettingTherePage = () => {
 
 
             <div class="clearfix">
-                <div class="centered-text"><h3>How to get here</h3><br />
+                <div class="centered-text">
+                    <h3>How to get here</h3><br />
                     <img id="directions" src="/images/directions.gif" alt="QA Cinemas" />
 
                     <p>We're right in the city centre, so we're easy to get to! <br /><br />There are lots of public transport options available. <br /><br />We're just a short walk away from both Queen Street and Central Station as well as Buchanan Street Bus Station.
@@ -38,7 +39,6 @@ const GettingTherePage = () => {
                     </p>
                 </div>
             </div>
-
 
 
 

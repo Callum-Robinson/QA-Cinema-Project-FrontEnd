@@ -115,9 +115,12 @@ nav {
 }
 
 #home-content img {
-  float: right;
+  align-items: center;
+  width: 60%;
   
 }
+
+
 
 #cinema {
   display: block;
@@ -271,6 +274,15 @@ div.listings-gallery {
   #toggle {
       display: block;
       cursor: pointer;
+  }
+
+  #directions {
+    width: 90%;
+  }
+
+  #cinema2 {
+    width: 90%;
+    float: none;
   }
 }
 

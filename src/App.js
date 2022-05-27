@@ -19,7 +19,7 @@ function App() {
     
     <div className='App'>
       <header>
-        <img id="banner" src="/images/QA-logo-banner.png" alt="QA Cinemas" />
+      <Link to="/"><img id="banner" src="/images/QA-logo-banner.png" alt="QA Cinemas" /></Link>
       </header>
 
       <nav id="navbar">
@@ -43,7 +43,7 @@ function App() {
           <Link className="footer-link" to="/about">About</Link>
           <Link className="footer-link" to="/contactus">Contact Us</Link>
             
-          <img id="logo" src="/images/QA-logo-small.png" alt="placeholder logo" />
+          <Link to="/"><img id="logo" src="/images/QA-logo-small.png" alt="placeholder logo" /></Link>
       </footer>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       

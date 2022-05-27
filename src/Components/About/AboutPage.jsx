@@ -5,14 +5,20 @@ import SocialLinks from "./SocialLinks";
 const AboutPage = () => {
   return (
     <main>
-      <div className="clear-fix">
-        <div className="centered-text">
-      
-        <Info />
-        <br></br></div>
-        <OurTeam />
-        <br></br>
-      <SocialLinks /></div>
+      <div class="centered-text">
+        <div className="clear-fix">
+          <div className="centered-text">
+
+            <Info />
+            <br></br>
+            <OurTeam />
+            <br></br>
+            <SocialLinks />
+
+            <SocialLinks />
+          </div>
+        </div>
+      </div>
     </main>
   );
 };
