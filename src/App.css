@@ -115,9 +115,13 @@ nav {
 }
 
 #home-content img {
-  float: right;
+  align-items: center;
   width: 40%;
   
+}
+
+#classifications img {
+  align-items: center;
 }
 
 #cinema {
