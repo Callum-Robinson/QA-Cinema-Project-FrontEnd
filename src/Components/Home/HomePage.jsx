@@ -1,4 +1,5 @@
 import React from "react";
+import { Link} from 'react-router-dom';
 
 
 
@@ -11,7 +12,7 @@ export default function Home() {
             
                 <div id="home-content">
                     
-                    <img id="posters-home" src="/images/Get-Out-Dune-The-Thing-Alternative-Movie-Posters.webp" alt="a photograph of our Glasgow cinema from the street" />
+                <Link to="/listingsgallery"><img id="posters-home" src="/images/Get-Out-Dune-The-Thing-Alternative-Movie-Posters.webp" alt="a photograph of our Glasgow cinema from the street" /></Link>
 
                     <br/><br/>
                     
