@@ -1,0 +1,40 @@
+
+
+      <div class="clearfix">
+      <div class="poster"><img src="The-Man-Who-Fell-to-Earth-Poster-–-Mondo.webp"></div>
+        
+        <div id="film">
+          
+          <h2> Film 3</h2>
+          <br /><br />
+          <label>Please select the date you would like to see the film: </label><input type="date">
+          <br /><br /><br />
+          <fieldset>
+            <legend>BOOKER DETAILS</legend>
+
+            <label class="inline">
+              FIRST NAME
+              <input type="text" name="key" value="" />
+            </label>
+            <label class="inline">
+              LAST NAME
+              <input type="text" name="value" value="" />
+            </label>
+
+          </fieldset>
+          <br /><br />
+
+
+          <fieldset>
+            <legend>TICKETS</legend>
+
+            <form oninput="x.value=parseInt(a.value * 7)+parseInt(b.value * 10)+parseInt(c.value * 8)">
+              CHILD £7.00
+              <input type="number" id="a" value=""> <br />
+              ADULT £10.00
+              <input type="number" id="b" value=""> <br />
+              CONCESSION £8.00
+              <input type="number" id="c" value=""> <br />
+              TOTAL: £<output name="x" for="a b c"></output>
+            </form>
+          </fieldset>
