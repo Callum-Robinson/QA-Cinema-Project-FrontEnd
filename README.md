@@ -10,22 +10,6 @@ The back-end can be found here: https://github.com/Mohab-Khalifa/QA-Cinema-Proje
 The Jira planning board for this project can be found here: https://mohabk.atlassian.net/jira/software/projects/FPC/boards/7/roadmap
 
 
-## Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Version Control System: Git
-Source Code Management: GitHub
-Kanban Board: Jira
-Full-Stack Development Technologies: MERN stack
-Database Management System: Locally or cloud hosted instance of MongoDB
-Back-End Programming Language: Node
-API Development Platform: Express
-Front-End Development Framework: React
-Unit Testing: Mocha, Chai
-```
-
 ## Installation
 
 For this project you will need:
