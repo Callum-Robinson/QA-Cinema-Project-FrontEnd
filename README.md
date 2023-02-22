@@ -7,7 +7,7 @@ This is the front-end of the application and the goal was to create an attractiv
 
 The back-end can be found here: https://github.com/Mohab-Khalifa/QA-Cinema-Project-BackEnd
 
-The Jira planning board for this project can be found here: https://mohabk.atlassian.net/jira/software/projects/FPC/boards/7/roadmap
+The Jira planning board for this project can be found here: https://mohabk.atlassian.net/jira/software/projects/FPC/boards/7/roadmap (No longer available)
 
 
 ## Installation
